@@ -10,7 +10,7 @@ test('View Leave Page', async ({page})=>{
      await expect(page.locator('a[href*="orangehrm.com"][class="oxd-brand"]')).toBeVisible();
 
      await page.locator('a[href="/web/index.php/leave/viewLeaveModule"]').click();
-     await page.waitForTimeout(3000);
+     await page.waitForTimeout(4000);
      await expect(page.locator('h6[class*="topbar"]')).toHaveText('Leave');
 
 
