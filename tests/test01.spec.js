@@ -7,7 +7,7 @@ test('Login', async ({page})=>{
      await page.locator('input[type="password"]').fill('admin123');
      await page.locator('button[type="submit"]').click();
      await page.waitForTimeout(4000);
-     await expect(page.locator('a[href*="orangehrm.com"][class="oxd-brand"]')).toBeVisible();
+     await expect(page.locator('a[href*="orangehrm.com"][class="oxd-brand"]')).toBeVisible({timeout:4000});
 
      
 })
